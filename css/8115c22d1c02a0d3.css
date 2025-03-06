@@ -1,0 +1,470 @@
+.app_page__UzPDe {
+  color: var(--font-color);
+  background: var(--bg-color);
+}
+.app_emergencybanner__3DDGd {
+  font-size: 19px;
+  background: #fd0;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  z-index: 99;
+}
+.app_container__6iLOB {
+  min-height: calc(100vh - 82px);
+  margin-top: 82px;
+  padding: 0;
+}
+@media (max-width: 1599.98px) {
+  .app_container__6iLOB {
+    margin-top: 66px;
+    min-height: calc(100vh - 66px);
+  }
+}
+@media (max-width: 499.98px) {
+  .app_container__6iLOB {
+    margin-top: 48px;
+  }
+}
+.app_main___jduf {
+  padding: 0;
+  width: 100%;
+}
+@media print {
+  .app_container__6iLOB {
+    margin-top: 0;
+  }
+  #app_onetrust-consent-sdk__8X8uX {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .OutageBanner_banner-ads-top__t6q7k {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .OutageBanner_img-container__rPFTZ img {
+    display: none;
+  }
+  .OutageBanner_close_link__g8xUC {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .OutageBanner_banner-ads-top__t6q7k {
+    width: 1170px;
+  }
+}
+.OutageBanner_text-main__61zEo {
+  font-family: Open Sans, sans-serif;
+}
+.OutageBanner_text-main-heading1__B9aoi {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 34.5px;
+  margin-bottom: 0.67em;
+  color: #000;
+}
+.OutageBanner_text-main-paragraph__TVJgt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+.OutageBanner_banner-ads-bgclr-yellow__pPVsw {
+  background-color: #f1dd3d;
+}
+.OutageBanner_banner-ads-top__t6q7k {
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 10px;
+  width: 100%;
+}
+.OutageBanner_img-container__rPFTZ img {
+  width: 149px;
+}
+.OutageBanner_img-container__rPFTZ {
+  padding: 0 40px;
+}
+.OutageBanner_close-link__04y6r {
+  padding: 20px;
+  font-size: 31px;
+  cursor: pointer;
+}
+.loading_outerDiv__iDxi0 {
+  text-align: center;
+}
+.loading_loaderCointainer__A5VML {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.loading_loader___n6IL {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-actionActiveBgSecondary);
+  border-radius: 50%;
+  animation: loading_spinner__hz512 1s linear infinite;
+}
+.loading_loader___n6IL:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    transparent,
+    var(--color-actionActiveBgSecondary)
+  );
+  border-top-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+}
+.loading_loader___n6IL:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  background-color: azure;
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-appWhite), 0 0 20px var(--color-appWhite),
+    0 0 30px var(--color-appWhite), 0 0 40px var(--color-appWhite),
+    0 0 50px var(--color-appWhite);
+}
+.loading_loader___n6IL span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  left: 5px;
+  bottom: 5px;
+  background-color: var(--color-appWhite);
+  border-radius: 50%;
+}
+@keyframes loading_spinner__hz512 {
+  0% {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+.TATResults_tat-progress-container__PwDU3 {
+  -webkit-padding-start: 12px;
+  padding-inline-start: 12px;
+}
+@media (max-width: 1599.98px) {
+  .TATResults_tat-progress-container__PwDU3 {
+    -webkit-padding-start: 8px;
+    padding-inline-start: 8px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .TATResults_tat-progress-container__PwDU3 {
+    padding-left: 6px;
+  }
+}
+@media (max-width: 499.98px) {
+  .TATResults_tat-progress-container__PwDU3 {
+    padding-left: 4px;
+  }
+}
+.TATResults_edit-receiver-name-message__s459i {
+  color: var(--color-textPrimary);
+  font-family: EuclidWU;
+  font-size: 12px;
+  font-weight: 400;
+  height: 18px;
+  letter-spacing: -0.08px;
+  line-height: 18px;
+}
+.TATResults_link_edit_receiver_name__5F_9J {
+  font-family: EuclidWU;
+  font-size: 12px;
+  font-weight: 400;
+  height: 18px;
+  letter-spacing: 0;
+  line-height: 18px;
+  width: 146px;
+  margin-top: 12px;
+}
+.TATResults_mtcnSubtitle__65oUe,
+.TATResults_mtcnText__1u4oZ,
+.TATResults_mtcnTitle__BLP7W {
+  color: var(--color-textPrimary);
+}
+.TATResults_link-button__Don07 label {
+  margin: 0;
+  cursor: pointer;
+}
+.ReminderReceipt_reminder-section-edit-delete__u0lNG {
+  display: inline;
+  width: 504px;
+  color: #666;
+  font-size: 18px;
+  font-family: EuclidWU;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+.ReminderReceipt_transfer-section-edit-delete__jFyhz {
+  display: inline;
+  width: 504px;
+  height: 54px;
+  color: #666;
+  font-size: 14px;
+  font-family: EuclidWU;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+@media (max-width: 1024.98px) {
+  .ReminderReceipt_reminder-section-accordion__OddZ8 svg {
+    width: auto;
+    height: 24px;
+    padding-left: 100px;
+  }
+}
+@media (max-width: 499.98px) {
+  .ReminderReceipt_reminder-section-title-details__bTdMY
+    span.ReminderReceipt_wu-flag__KEr8G,
+  .ReminderReceipt_reminder-section-title-details__bTdMY > img {
+    max-width: 32px;
+    max-height: 32px;
+  }
+}
+.ReminderReceipt_reminder-section-title-info__siZgg {
+  color: var(--color-textPrimary);
+}
+@media (max-width: 1024.98px) {
+  .ReminderReceipt_reminder-section-title-info__siZgg {
+    padding: 16px;
+  }
+}
+.ReminderReceipt_acc-icon__hpkPT svg {
+  width: auto;
+  height: 24px;
+}
+.ReminderReceipt_reminder-details-info__AUncr {
+  border-top: 1px solid var(--color-actionHoverBgSecondary);
+}
+@media (max-width: 499.98px) {
+  .ReminderReceipt_reminder-details-info__AUncr {
+    padding-inline: 16px;
+  }
+}
+.ReminderReceipt_reminder-section__pLi4c {
+  background-color: var(--color-sectionBgPrimary);
+  border-radius: 8px;
+  border: 1px solid #42b7b4;
+}
+.ReminderReceipt_reminder-section__pLi4c.ReminderReceipt_no-bottom-border__ymCns {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.ReminderReceipt_reminder-failure-msg__1ds2y {
+  color: #000;
+  font-family: EuclidWU;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+@media (max-width: 499.98px) {
+  .ReminderReceipt_reminder-failure-msg__1ds2y {
+    margin-top: 12px;
+  }
+}
+.ReminderReceipt_reminder-success-msg__Y7RMn {
+  color: #000;
+  font-family: EuclidWU;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-bottom: 24px;
+}
+@media (max-width: 499.98px) {
+  .ReminderReceipt_reminder-success-msg__Y7RMn {
+    margin-top: 12px;
+  }
+}
+.ReminderReceipt_reminder-accordian__eEvX2 {
+  display: inline;
+  margin-left: 20px;
+  font-family: EuclidWU;
+}
+.ReminderReceipt_link_content__e9TWX {
+  margin-top: 20px;
+}
+.ReminderReceipt_reminder-section-title-value__iw5sa {
+  font-family: EuclidWU;
+  font-weight: 700;
+  line-height: 27px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+@media (max-width: 768px) {
+  .ReminderReceipt_reminder-section-title-value__iw5sa {
+    max-width: 250px;
+  }
+}
+.ReminderReceipt_btn_container__MdZj2 {
+  margin-top: 25px;
+}
+.ReminderReceipt_btn_updated_reminder__Ty0mW {
+  margin-top: 10px;
+  font-family: EuclidWU;
+  font-size: 14px;
+  line-height: 24;
+  text-align: "center";
+  border-style: solid !important;
+  width: 100% !important;
+  text-decoration: none;
+  height: 10px;
+}
+.SetReminderWidget_reminder-section__n0Hby {
+  background-color: var(--color-sectionBgPrimary);
+  border-radius: 8px;
+  border: 1px solid #42b7b4;
+}
+.SetReminderWidget_reminder-section__n0Hby.SetReminderWidget_no-bottom-border__OTbjh {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media print {
+  .SetReminderWidget_reminder-section__n0Hby {
+    display: none;
+  }
+}
+@media (max-width: 499.98px) {
+  .SetReminderWidget_reminder-section-title__W26UY {
+    padding: 16px;
+  }
+}
+@media (max-width: 499.98px) and (max-width: 499.98px) {
+  .SetReminderWidget_reminder-section-title__W26UY {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 499.98px) and (min-width: 500px) and (max-width: 1024.98px) {
+  .SetReminderWidget_reminder-section-title__W26UY {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 499.98px) and (min-width: 1025px) and (max-width: 1599.98px) {
+  .SetReminderWidget_reminder-section-title__W26UY {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 499.98px) and (min-width: 1600px) {
+  .SetReminderWidget_reminder-section-title__W26UY {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+}
+@media (max-width: 499.98px) {
+  .SetReminderWidget_reminder-section-title-details__pXLgg
+    span.SetReminderWidget_wu-flag__bQcri,
+  .SetReminderWidget_reminder-section-title-details__pXLgg > img {
+    max-width: 32px;
+    max-height: 32px;
+  }
+}
+.SetReminderWidget_reminder-info-value__RwNJZ {
+  font-family: EuclidWUMedium;
+  color: var(--color-textPrimary);
+  text-align: right;
+}
+.SetReminderWidget_reminder-info-value__RwNJZ > div {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.SetReminderWidget_reminder-info-label__TT_me {
+  color: var(--color-textPrimary);
+  font-family: EuclidWU;
+}
+.SetReminderWidget_reminder-section-title-details__pXLgg
+  .SetReminderWidget_reminder-info-label__TT_me {
+  width: 100%;
+  word-break: break-word;
+}
+.SetReminderWidget_reminder-section-title-details__pXLgg
+  .SetReminderWidget_reminder-info-value__RwNJZ {
+  width: 100%;
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+.ROKTAds_roktContainer__EecP2 {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.Accordian_container__ivopH {
+  padding: 16px 0;
+  border-bottom: 2px solid #bfbfbf;
+  color: #000;
+  font-family: RobotoRegular;
+}
+.Accordian_mainContent__MUQcf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+.Accordian_content__ov5uc {
+  display: flex;
+  flex-direction: column;
+}
+.Accordian_answer__W1sxK {
+  font-size: 16px;
+  margin-left: 84px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 16px;
+}
+.Accordian_quetion__PhbSF {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 48px;
+  line-height: 27px;
+  font-family: RobotoMedium;
+}
+.FAQ_container__rD68S {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 34px;
+  line-height: 41px;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+@media (max-width: 1599.98px) {
+  .FAQ_container__rD68S {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 1024.98px) {
+  .FAQ_container__rD68S {
+    padding: 0 16px;
+  }
+}
+.FAQ_heading__gMjgg {
+  font-size: 2rem;
+  line-height: 41px;
+  padding-bottom: 24px;
+  font-family: PPRightMedium;
+  border-bottom: 2px solid #bfbfbf;
+}
